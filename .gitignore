@@ -1,0 +1,13 @@
+# ZMK build artifacts
+build/
+.west/
+modules/
+tools/
+zephyr/
+bootloader/
+zmk/
+
+# Editor
+.vscode/
+*.swp
+*.swo
