@@ -95,7 +95,7 @@
             bindings = <
    &kp EXCL   &kp AT     &kp HASH &kp DLLR &kp PRCNT    &kp CARET &kp AMPS     &kp ASTRK    &kp LPAR     &kp RPAR
    &kp TAB    &kp ESC    &trans   &trans   &trans       &kp LEFT  &kp DOWN     &kp UP       &kp RIGHT    &kp BSLH
-   &bl BL_DEC &bl BL_INC &trans   &trans   &trans       &trans    &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP &kp GRAVE
+    &trans     &trans     &trans   &trans   &trans       &trans    &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP &kp GRAVE
                          &kp LGUI &trans   &kp SPACE    &kp RET   &trans    &mo 3
             >;
         };
