@@ -75,12 +75,12 @@
         lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  `  |  `  |  (  |  )  |     |   |  \  |  7  |  8  |  9  |  -  |
-// | GUI | ALT | CTL | SFT |BTCLR|   | CAP |  4  |  5  |  6  |  +  |
+// | LGUI| ALT | CTL | SFT |BTCLR|   | CAP |  4  |  5  |  6  |  +  |
 // |  {  |  }  |  [  |  ]  |     |   |     |  1  |  2  |  3  |  =  |
 //             | GUI |     | SPC |   | ENT |  0  | MSE |
             bindings = <
    &kp GRAVE    &kp SQT      &kp LPAR     &kp RPAR     &trans       &kp BSLH   &kp N7     &kp N8  &kp N9  &kp MINUS
-   &kp GUI      &kp LALT     &kp LCTRL    &kp LSHIFT   &trans       &caps_word &kp N4     &kp N5  &kp N6  &kp PLUS
+   &kp LGUI     &kp LALT     &kp LCTRL    &kp LSHIFT   &trans       &caps_word &kp N4     &kp N5  &kp N6  &kp PLUS
    &kp LBRC     &kp RBRC     &kp LBKT     &kp RBKT     &trans       &trans     &kp N1     &kp N2  &kp N3  &kp EQUAL
                              &kp LGUI     &trans       &kp SPACE    &kp RET    &kp N0     &mo 3
             >;
