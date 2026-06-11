@@ -75,12 +75,12 @@
         lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  `  |  `  |  (  |  )  |     |   |  \  |  7  |  8  |  9  |  -  |
-// | BT1 | BT2 | BT3 | SFT |BTCLR|   | CAP |  4  |  5  |  6  |  +  |
+// | GUI | ALT | CTL | SFT |BTCLR|   | CAP |  4  |  5  |  6  |  +  |
 // |  {  |  }  |  [  |  ]  |     |   |     |  1  |  2  |  3  |  =  |
 //             | GUI |     | SPC |   | ENT |  0  | MSE |
             bindings = <
    &kp GRAVE    &kp SQT      &kp LPAR     &kp RPAR     &trans       &kp BSLH   &kp N7     &kp N8  &kp N9  &kp MINUS
-   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &kp LSHIFT   &bt BT_CLR   &caps_word &kp N4     &kp N5  &kp N6  &kp PLUS
+   &kp GUI      &kp LALT     &kp LCTRL    &kp LSHIFT   &trans       &caps_word &kp N4     &kp N5  &kp N6  &kp PLUS
    &kp LBRC     &kp RBRC     &kp LBKT     &kp RBKT     &trans       &trans     &kp N1     &kp N2  &kp N3  &kp EQUAL
                              &kp LGUI     &trans       &kp SPACE    &kp RET    &kp N0     &mo 3
             >;
@@ -90,13 +90,13 @@
 // -----------------------------------------------------------------------------------------
 // | F1  | F2  | F3  | F4  | F5  |   | F6  | F7  | F8  | F9  | F10 |
 // | SUN |     |     |     |     |   | LFT | DWN |  UP | RGT | F11 |
-// | BR- | BR+ |     |     |     |   |     | MUT | V-  | V+  | F12 |
+// | BR- | BR+ | BT1 | BT2 | BR3 |   |BTCLR| MUT | V-  | V+  | F12 |
 //             | GUI |     | SPC |   | ENT |     | MSE |
             bindings = <
-   &kp F1         &kp F2       &kp F3   &kp F4   &kp F5       &kp F6    &kp F7       &kp F8       &kp F9       &kp F10
-   &studio_unlock &trans       &trans   &trans   &trans       &kp LEFT  &kp DOWN     &kp UP       &kp RIGHT    &kp F11
-   &kp C_BRI_DN   &kp C_BRI_UP &trans   &trans   &trans       &trans    &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP &kp F12
-                               &kp LGUI &trans   &kp SPACE    &kp RET   &trans    &mo 3
+   &kp F1         &kp F2       &kp F3       &kp F4        &kp F5       &kp F6     &kp F7       &kp F8       &kp F9       &kp F10
+   &studio_unlock &trans       &trans       &trans        &trans       &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT    &kp F11
+   &kp C_BRI_DN   &kp C_BRI_UP &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_CLR &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP &kp F12
+                               &kp LGUI     &trans        &kp SPACE    &kp RET    &trans    &mo 3
             >;
         };
 
