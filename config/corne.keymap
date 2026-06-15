@@ -51,21 +51,21 @@
         default_layer {
 // -----------------------------------------------------------------------------------------
 // |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  |  I  |  O  |  P  |
-// | A/⌘ | S/⌥ | D/⌃ | F/⇧ |  G  |   |  H  | J/⇧ | K/⌃ | L/⌥ | ;/⌘ |
+// |A/GUI|A/Alt|D/Ctl|F/Sft|  G  |   |  H  |J/Sft|K/Ctl|L/Alt|;/GUI|
 // |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,  |  .  |  /  |
-//             | GUI |T/LWR| SPC |   | ENT | RSE | MSE |
+//             | DEL |T/LWR| SPC |   | ENT | RSE | MSE |
             bindings = <
    &kp Q        &kp W        &kp E         &kp R         &kp T   &kp Y &kp U         &kp I         &kp O        &kp P
    &hm LGUI A   &hm LALT S   &hm LCTRL D   &hm LSHFT F   &kp G   &kp H &hm RSHFT J   &hm RCTRL K   &hm LALT L   &hm RGUI SEMI
    &kp Z        &kp X        &kp C         &kp V         &kp B   &kp N &kp M         &kp COMMA     &kp DOT      &hm RALT FSLH
-                             &kp LGUI      &lt 1 TAB     &kp SPACE   &kp RET &mo 2   &mo 3
+                             &kp DEL       &lt 1 TAB     &kp SPACE   &kp RET &mo 2   &mo 3
             >;
         };
 
         lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  `  |  `  |  (  |  )  |     |   |  \  |  7  |  8  |  9  |  -  |
-// | LGUI| ALT | CTL | SFT |BTCLR|   | CAP |  4  |  5  |  6  |  +  |
+// | GUI | ALT | CTL | SFT |     |   | CAP |  4  |  5  |  6  |  +  |
 // |  {  |  }  |  [  |  ]  |     |   |     |  1  |  2  |  3  |  =  |
 //             | GUI |     | SPC |   | ENT |  0  | MSE |
             bindings = <
@@ -79,12 +79,12 @@
         raise_layer {
 // -----------------------------------------------------------------------------------------
 // | F1  | F2  | F3  | F4  | F5  |   | F6  | F7  | F8  | F9  | F10 |
-// | SUN |     |     |     |     |   | LFT | DWN |  UP | RGT | F11 |
+// | STU | HOM | PDN | PUP | END |   | LFT | DWN |  UP | RGT | F11 |
 // | BR- | BR+ | BT1 | BT2 | BR3 |   |BTCLR| MUT | V-  | V+  | F12 |
 //             | GUI |     | SPC |   | ENT |     | MSE |
             bindings = <
    &kp F1         &kp F2       &kp F3       &kp F4        &kp F5       &kp F6     &kp F7       &kp F8       &kp F9       &kp F10
-   &studio_unlock &trans       &trans       &trans        &trans       &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT    &kp F11
+   &studio_unlock &kp HOME     &kp PG_DN    &kp PG_UP     &kp END      &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT    &kp F11
    &kp C_BRI_DN   &kp C_BRI_UP &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_CLR &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP &kp F12
                                &kp LGUI     &trans        &kp SPACE    &kp RET    &trans    &mo 3
             >;
